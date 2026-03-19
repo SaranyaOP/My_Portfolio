@@ -33,7 +33,7 @@ export default function Contact() {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:5000/send-email", form);
+      await axios.post("https://my-portfolio-jq2b.onrender.com/send-email", form);
       toast.success(successMessage);
       setForm({ name: "", email: "", message: "" });
     } catch (err) {
