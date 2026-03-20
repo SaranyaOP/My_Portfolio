@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://your-frontend-domain.com",
+    origin: "https://saranyaop-portfolio.vercel.app/",
     methods: ["POST"],
   })
 );
