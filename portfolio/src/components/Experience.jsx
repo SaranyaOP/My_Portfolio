@@ -6,23 +6,23 @@ export default function Experience() {
       duration: "June 2023 – Jan 2026",
       project: "LG ThinQ App – Robot Vacuum Cleaner",
       points: [
-        "Built responsive UI features including Efficient Charging, Multi-map Navigation, and Consumable Management",
-        "Used React and Recoil.js for efficient state management and improved user interaction",
-        "Integrated APIs to enable seamless communication between app and robot systems",
-        "Collaborated with UX designers to enhance usability and consistency",
-        "Improved app performance by reducing load time by 25%",
-        "Reduced defect rates by 20% through testing and debugging"
+        "Developed scalable and responsive UI components for features like multi-map navigation, efficient charging, and consumable tracking using React",
+        "Implemented state management using Recoil.js to handle complex device states and improve real-time UI updates",
+        "Integrated REST APIs to enable seamless communication between the application and IoT-based robot systems",
+        "Optimized performance by reducing initial load time by 25% through code splitting and lazy loading",
+        "Improved application stability by identifying and fixing critical bugs, reducing defect rates by 20%",
+        "Collaborated with UX designers to refine user flows, improving usability and consistency across screens"
       ]
     },
     {
-      company: "Cybotrix Technology",
+      company: "Cybotrix Technology, Bangalore",
       role: "Frontend Developer",
       duration: "Oct 2022 – Mar 2023",
       project: "Medical Planet – Healthcare",
       points: [
-        "Developed clinic management features including appointment booking and medicine ordering",
-        "Improved UI flows and fixed cross-browser compatibility issues",
-        "Designed modules to streamline scheduling and user operations"
+        "Built responsive UI for clinic management features including appointment scheduling and medicine ordering",
+        "Improved cross-browser compatibility and fixed UI inconsistencies across multiple devices",
+        "Designed and implemented reusable components to streamline development and improve maintainability"
       ]
     }
   ];

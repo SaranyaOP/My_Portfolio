@@ -8,6 +8,7 @@ export default function Skills() {
     { name: "MongoDB", color: "green" },
      { name: "Express.js", color: "gray" },
     { name: "Node.js", color: "lime" },
+    { name: "Git", color: "amber" },
    
   ];
 
@@ -20,6 +21,7 @@ export default function Skills() {
     gray: "text-gray-500 border-gray-500",
     cyan: "text-cyan-400 border-cyan-400",
     lime: "text-lime-600 border-lime-600",
+    amber: "text-amber-600 border-amber-600",
   };
 
 
@@ -27,7 +29,7 @@ export default function Skills() {
     <div className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-center">
       <h2 className="text-3xl font-bold mb-10 dark:text-white">Skills</h2>
 
-      <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
+      <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
         {skills.map((skill, index) => (
           <span
             key={index}

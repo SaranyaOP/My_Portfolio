@@ -11,10 +11,12 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://saranyaop-portfolio.vercel.app/",
-    methods: ["POST"],
+    origin: "https://saranyaop-portfolio.vercel.app",
+    methods: ["GET", "POST"],
   })
 );
+
+
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -23,6 +25,8 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS,
   },
 });
+
+
 
 app.post("/send-email", async (req, res) => {
   const { name, email, message } = req.body;
@@ -55,9 +59,11 @@ app.post("/send-email", async (req, res) => {
     });
 
     res.status(200).json({ success: true });
-  } catch (error) {
-    console.error("Email error:", error.message);
-    res.status(500).json({ success: false });
+  } 
+catch (error) {
+  console.error("Email error:", error);
+  res.status(500).json({ success: false, message: error.message });
+
   }
 });
 

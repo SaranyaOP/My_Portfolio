@@ -51,7 +51,7 @@ export default function Hero() {
       <div className="mt-6 flex gap-4">
         <button
           onClick={() => scrollToSection("projects")}
-          className="px-6 py-2 bg-white text-blue-600 rounded-lg font-semibold hover:scale-105 transition"
+          className="px-6 py-2 bg-white text-black rounded-lg font-semibold hover:scale-105 transition"
         >
           View Projects
         </button>

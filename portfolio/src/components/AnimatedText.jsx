@@ -13,7 +13,7 @@ export default function AnimatedText() {
    {role: "Frontend Developer", icon:<FaPalette/>},
    {role: "React Specialist",icon:<FaSearch/>},
     {role: "Fullstack Developer",icon:<FaTools/>},
-   {role: "Upcoming Agentic Fullstack Developer",icon:<FaRobot/>}
+   {role: "Aspiring AI Full-Stack Developer",icon:<FaRobot/>}
   ];
 
   const [index, setIndex] = useState(0);

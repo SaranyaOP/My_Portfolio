@@ -28,20 +28,29 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const sendEmail = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+const sendEmail = async (e) => {
+  e.preventDefault();
+  setLoading(true);
 
-    try {
-      await axios.post("https://my-portfolio-jq2b.onrender.com/send-email", form);
-      toast.success(successMessage);
-      setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      toast.error(errorMessage);
-    } finally {
-      setLoading(false);
-    }
-  };
+  try {
+    const res = await axios.post(
+      "https://my-portfolio-jq2b.onrender.com/send-email",
+      form
+    );
+
+    console.log("SUCCESS:", res.data); // 👈 add this
+
+    toast.success("Message sent successfully!");
+    setForm({ name: "", email: "", message: "" });
+
+  } catch (err) {
+    console.log("ERROR:", err); // 👈 CRITICAL
+
+    toast.error("Something went wrong!");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="py-20 px-6 bg-gray-100 dark:bg-gray-900">
