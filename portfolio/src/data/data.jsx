@@ -2,7 +2,7 @@ import project_chatapp from '../assets/project_chatapp.png'
 import project_ai_chat_bot from '../assets/project_ai_chat_bot.png'
 // import project_crud_app from '../assets/project_crud_app.png'
 import project_youtube_app from '../assets/project_youtube_app.png'
-import project_life_admin_ai from '../assets/project_life_admin_AI.png'
+import project_life_admin_ai from '../assets/project_life_admin_ai.png'
 
 // import project_chatapp from '/assets/project_app.png'
 // import project_chatapp from '/assets/project_app.png'
